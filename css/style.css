@@ -17,11 +17,25 @@
 /*--/COMMON */
 
 /*-- MAIN */
+
+
+/* prova struttura con flex */
+
 main {
     display: flex;
     width: 100%;
     height: calc(100vh - 80px);
     background-color: #141922;
+
+}
+
+.top-bar {
+    flex-direction: row;
+    background-color: blanchedalmond;
+}
+
+#upgrade-btn {
+    border: 1px solid white;
 
 }
 
