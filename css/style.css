@@ -1,6 +1,49 @@
 /* RESET */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+/* COMMON */
+
+  /*--COLORI */
+
+    /* night-blue  */
+        /* background-color: #141922; */
+
+    /* grey-footer */
+        /* backgroun-color: #282828 */
+
+/*--/COMMON */
+
+/*-- MAIN */
+main {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #141922;
+
+}
+
+.side-bar {
+    width: 200px;
+    background-color: black;
+}
+
+/*--/ MAIN */
+
+/*-- FOOTER */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #282828;
+}
+
+
+
+/*--/ FOOTER */
+
+
+
+
