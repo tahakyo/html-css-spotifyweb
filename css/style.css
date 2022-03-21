@@ -6,6 +6,11 @@
     }
 /* COMMON */
 
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
   /*--COLORI */
 
     /* night-blue  */
@@ -14,7 +19,9 @@
     /* grey-footer */
         /* backgroun-color: #282828 */
 
+
 /*--/COMMON */
+
 
 /*-- MAIN */
 
@@ -64,17 +71,67 @@ footer {
 
 
 .footer-l {
-    width: 15%;
-    background-color: red;
+    width: 20%;
 }
 
-.footer-r {
-    width: 15%;
-    background-color: yellowgreen;
+.track-on {
+    display: flex;
+    justify-content: space-around;
 }
+
+.track-img img {
+    width: 100%;
+    height: 80px;
+    padding: 1em;
+    object-fit: contain;
+}
+.track-text {
+    align-self: center;
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.track-text div:last-child {
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.footer-icon {
+    align-self: center;
+}
+
+
+
+
+
+
 
 .footer-cent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 70%;
+}
+
+
+.range-bar {
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: lightgrey;
+    display: inline-block;
+}
+
+
+
+.footer-r {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
