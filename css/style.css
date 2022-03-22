@@ -51,10 +51,10 @@ main {
 .side-bar {
     width: 200px;
     height: 100%;
-    background-color: lightblue;
+    background-color: black;
     float: left;
     overflow: hidden;
-    padding-left: .5em;
+    padding: .5em;
 }
 .side-bar-top {
     height: calc(100% - 100px);
@@ -63,18 +63,12 @@ main {
     flex-direction: column;
 }
 
-.logo {
-    background-color: blue;
-    
-}
+
 .logo img {
     width: 70%;
     padding: .5em 0;
 }
-.menu {
-    
-    background-color: lightseagreen;
-}
+
 
 .menu-icons {
     padding: 0 2px;
@@ -94,8 +88,6 @@ main {
 }
 
 .playlist {
-    /* height: 300px; */
-    background-color: crimson;
     overflow: hidden;
     flex-grow: 1;
 }
@@ -128,9 +120,29 @@ main {
 
 
 .side-bar-btm {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     height: 100px;
-    /* test */
-    background-color: green;
+    padding-bottom: .3em;
+}
+.setup-app {
+    border-bottom: 2px solid grey;
+    padding-bottom: 0.5em;
+    margin-bottom: .8em;
+}
+.side-bar-btm img {
+    width: 1em;
+    vertical-align: middle;
+}
+.side-bar-btm span {
+    font-size: .8em;
+    vertical-align: middle;
+}
+
+.profile img {
+    background-color: gray;
+    border-radius: 100%;
 }
 
     /* Nav */
