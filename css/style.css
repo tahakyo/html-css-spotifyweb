@@ -43,32 +43,66 @@ html {
 /* prova struttura con flex */
 
 main {
-    /* display: flex; */
     width: 100%;
     height: calc(100% - 80px);
-
+    overflow: hidden;
 }
+    /* Nav */
+.side-bar {
+    width: 200px;
+    height: 100%;
+    background-color: lightblue;
+    float: left;
+}
+.side-bar-top {
+    height: calc(100% - 100px);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    background-color: blue;
+}
+.menu {
+    background-color: lightseagreen;
+}
+.playlist {
+    background-color: crimson;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+
+
+
+.side-bar-btm {
+    height: 100px;
+    /* test */
+    background-color: green;
+}
+
+    /* Nav */
+
 
 .main-content {
     width: calc(100% - 200px);
     height: 100%;
+    padding: 110px 20px 20px;
+    float: left;
+    overflow-y: auto;
 }
 
-/* .top-bar {
-    width: calc(100% - 200px);
+.top-bar {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: blanchedalmond;
-} */
-
-
-.side-bar {
-    width: 200px;
-    height: 100%;
-    background-color: black;
-    float: left;
+    width: calc(100% - 200px);
+    height: 100px;
+    background-color: rgba(0,0,0, .4);
 }
+
+
 
 /* prova struttura*/
 
@@ -110,12 +144,7 @@ footer {
     font-size: .8em;
 }
 
-.track-text div:last-child {
-    clear: both;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-}
+
 
 .footer-icon {
     align-self: center;
