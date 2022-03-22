@@ -53,25 +53,76 @@ main {
     height: 100%;
     background-color: lightblue;
     float: left;
+    overflow: hidden;
+    padding-left: .5em;
 }
 .side-bar-top {
     height: calc(100% - 100px);
-    min-height: 400px;
+    /* min-height: 400px; */
     display: flex;
     flex-direction: column;
 }
 
 .logo {
     background-color: blue;
+    
+}
+.logo img {
+    width: 70%;
+    padding: .5em 0;
 }
 .menu {
+    
     background-color: lightseagreen;
 }
+
+.menu-icons {
+    padding: 0 2px;
+    line-height: 1.5em;
+    color: #a3a3a3;;
+
+}
+
+.menu-icons img {
+    width: 10%;
+    vertical-align: middle;
+}
+.menu-icons span {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: .7em;
+}
+
 .playlist {
+    /* height: 300px; */
     background-color: crimson;
     overflow: hidden;
     flex-grow: 1;
 }
+
+.playlist h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0.5em 0;
+}
+.crea-playlist {
+    color: #a3a3a3;
+    margin-bottom: .6em;
+}
+.crea-playlist i{
+    font-size: 2em;
+    vertical-align: middle;
+}
+.crea-playlist span {
+    font-size: .9em;
+}
+
+.playlist ul {
+    list-style: none;
+    line-height: 2em;
+    font-size: .8em;
+}
+
 
 
 
