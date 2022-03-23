@@ -27,6 +27,10 @@ a {
     text-decoration: none;
     color: white;
 }
+ul {
+    list-style: none;
+}
+
 /*--/COMMON */
 
 
@@ -138,7 +142,7 @@ nav {
     /* NAVIGAZIONE */
 
     /* SECTION */
-.main-content {
+section {
     width: calc(100% - 200px);
     height: 100%;
     padding: 110px 20px 20px;
@@ -167,6 +171,16 @@ nav {
     font-size: .8em;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.section-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.section-menu li {
+    margin: 0.5em;
+    font-size: .8em;
 }
 
 
