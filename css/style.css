@@ -35,7 +35,9 @@ a:hover {
 ul {
     list-style: none;
 }
-
+img {
+    width: 100%;
+}
 
 /*--/COMMON */
 /* UTILITY */
@@ -79,30 +81,6 @@ nav {
     display: none;
 }
 
-            /* Mobile viewport */
-@media screen and (max-width: 600px) {
-    nav {
-        width: 80px;
-    }
-    section {
-        width: calc(100% - 80px);
-    }
-    .top-bar {
-        width: calc(100% - 80px);
-    }
-    .logo {
-        display: none;
-    }
-    .logo-mobile {
-        display: block;
-        text-align: center;
-    }
-    .logo-mobile img {
-        width: 50%;
-    } 
-    
-}
-
 .menu-icons {
     padding: 0 2px;
     line-height: 1.5em;
@@ -133,7 +111,7 @@ nav {
     overflow: hidden;
     flex-grow: 1;
     color: #a3a3a3;
-
+    padding-left: .5em;
 }
 
 .playlist h2 {
@@ -229,11 +207,15 @@ section {
 .section-menu {
     display: flex;
     justify-content: center;
+    color: #a3a3a3;
 }
 
 .section-menu li {
     margin: 0.5em;
     font-size: .8em;
+}
+.section-menu li a.active {
+    border-bottom: 2px solid yellowgreen;
 }
         /* Recent-album */
 
@@ -249,8 +231,31 @@ section {
     text-align: center;
 }
 
-.album-item img {
+
+
+.album-img {
+    position: relative;
+}
+
+.overlay::before {
+    content: "\f144";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
     width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay {
+    display: none;
+}
+.album-img:hover .overlay {
+    display: block;
+    cursor: pointer;
 }
 
 .round-img {
@@ -362,3 +367,25 @@ footer {
 
 
 
+/* Mobile viewport */
+@media screen and (max-width: 600px) {
+    nav {
+        width: 80px;
+    }
+    section {
+        width: calc(100% - 80px);
+    }
+    .top-bar {
+        width: calc(100% - 80px);
+    }
+    .logo {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+        text-align: center;
+    }
+    .logo-mobile img {
+        width: 50%;
+    } 
+}
