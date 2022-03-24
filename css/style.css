@@ -26,11 +26,16 @@ html {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: inherit
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 1);
 }
 ul {
     list-style: none;
 }
+
 
 /*--/COMMON */
 /* UTILITY */
@@ -55,7 +60,6 @@ nav {
     background-color: black;
     float: left;
     overflow: hidden;
-    padding: .5em;
 }
         /* Side-Bar */
 
@@ -69,13 +73,13 @@ nav {
 
 .logo img {
     width: 70%;
-    padding: .5em 0;
+    padding: .5em;
 }
 .logo-mobile {
     display: none;
 }
 
-
+            /* Mobile viewport */
 @media screen and (max-width: 600px) {
     nav {
         width: 80px;
@@ -102,13 +106,22 @@ nav {
 .menu-icons {
     padding: 0 2px;
     line-height: 1.5em;
-    color: #a3a3a3;;
+    color: #a3a3a3;
 
 }
+.menu .menu-icons a {
+    border-left: 3px solid transparent;
+}
+.menu .menu-icons a.active {
+    border-left: 3px solid yellowgreen;
+}
+
+
 
 .menu-icons img {
-    width: 10%;
+    width: 30px;
     vertical-align: middle;
+    padding-left: 2px;
 }
 .menu-icons span {
     vertical-align: middle;
@@ -119,6 +132,8 @@ nav {
 .playlist {
     overflow: hidden;
     flex-grow: 1;
+    color: #a3a3a3;
+
 }
 
 .playlist h2 {
@@ -153,6 +168,7 @@ nav {
     justify-content: end;
     height: 100px;
     padding-bottom: .3em;
+    color: #a3a3a3;
 }
 .setup-app {
     border-bottom: 2px solid grey;
@@ -205,6 +221,9 @@ section {
     font-size: .8em;
     font-weight: bold;
     text-transform: uppercase;
+}
+.upgrade-button:hover {
+    transform: scale(1.1);
 }
 
 .section-menu {
