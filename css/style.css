@@ -302,16 +302,26 @@ footer {
 
 
 .track-text {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
     font-size: .6em;
     margin-right: 50px;
+    color: #a3a3a3;
+}
+.track-text a:last-child {
+    text-decoration: underline;
+}
+
+.fa-play-circle:hover {
+    transform: scale(1.1);
+
 }
 
 
 
 .footer-icon {
-    align-self: center;
     margin: 0.5em auto;
+    color: #a3a3a3;
 }
 
 
@@ -333,12 +343,10 @@ footer {
 }
 
 .range-bar {
-    position: relative;
+    width: 80%;
     height: 4px;
-    width: 30px;
-    border-radius: 2px;
-    background-color: #5a5a5a;
-    margin: auto 50px
+    color: #a3a3a3;
+    border-radius: 5px;
 }
 
 
@@ -387,5 +395,30 @@ footer {
     }
     .logo-mobile img {
         width: 50%;
+    }
+    .menu-icons {
+        text-align: center;
     } 
+    .menu-icons span {
+        display: none;
+    }
+    .playlist {
+        display: none;
+    }
+    .side-bar-btm {
+        align-items: center;
+    }
+    .side-bar-btm span {
+        display: none;
+    }
+    .side-bar-btm a, img {
+        font-size: 2em;
+    }
+    .setup-app {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    .menu .menu-icons a.active {
+        border-left: none;
+    }
 }
